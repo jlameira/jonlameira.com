@@ -93,6 +93,7 @@ const AboutPage = () => (
         redes sociais.
       </p>
 
+
       <SocialLinks hideStyle />
     </MainContent>
   </>
