@@ -56,7 +56,7 @@ const nextConfig = {
             },
             {
                 source:
-                    '/novo-curso-gatsby-crie-um-site-pwa-com-react-graphql-netlify-cms/',
+                    '/novo-curso-gatsby-crie-um-site-pwa-com-react-graphql-netlify-admin/',
                 destination: 'https://jonlameira.com',
                 permanent: true
             }
