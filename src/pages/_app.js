@@ -3,13 +3,13 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import NextNProgress from 'nextjs-progressbar'
 
-import * as gtag from 'lib/gtag'
+import * as gtag from '@/lib/gtag'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
-import Analytics from 'components/Analytics'
+import Analytics from '@/components/Analytics'
 
-import Layout from 'components/Layout'
-import GlobalStyles from 'styles/global'
+import Layout from '@/components/Layout'
+import GlobalStyles from '@/styles/global'
 
 function App({ Component, pageProps }) {
   const router = useRouter()

@@ -43,7 +43,7 @@ const BlogPost = ({ post }) => {
         }}
       />
       <PostHeader>
-        <Link href="/" passHref>
+        <Link legacyBehavior href="/" passHref>
           <ButtonBack>← Voltar na listagem</ButtonBack>
         </Link>
 

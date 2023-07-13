@@ -31,7 +31,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <Link href="/" passHref>
+        <Link legacyBehavior href="/" passHref>
           <S.MenuBarLink
             title="Voltar para Home"
             className={router.pathname === '/' ? 'active' : ''}

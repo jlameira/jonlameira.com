@@ -5,7 +5,7 @@ import * as S from './styled'
 const RecommendedPosts = ({ next, previous }) => (
   <S.RecommendedWrapper>
     {previous && (
-      <Link href={previous.slug} passHref>
+      <Link legacyBehavior href={previous.slug} passHref>
         <S.RecommendedLink className="previous">
           {previous.frontmatter.title}
         </S.RecommendedLink>

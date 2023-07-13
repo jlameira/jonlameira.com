@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo'
-import SocialLinks from 'components/SocialLinks'
+import SocialLinks from '@/components/SocialLinks'
 
-import { MainContent } from 'styles/base'
+import { MainContent } from '@/styles/base'
 
 const AboutPage = () => (
   <>
@@ -11,7 +11,7 @@ const AboutPage = () => (
       openGraph={{
         type: 'website',
         locale: 'en_US',
-        url: 'https://willianjusten.com.br',
+        url: 'https://jonlameira.com',
         site_name: 'Jonathan Lameira',
         title: 'Jonathan Lameira',
         images: [
@@ -28,72 +28,62 @@ const AboutPage = () => (
       <h1>Sobre mim</h1>
       <p>
         Meu nome é Jonathan Lameira , nasci em Belém/PA,
-        trabalho como Software Engineer na{' '}
-        <a href="https://appcues.com">Appcues</a> e sou instrutor na{' '}
-        <a
-          href="https://www.udemy.com/user/willian-justen-de-vasconcellos/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Udemy
-        </a>
-        , além de ser um nômade digital e tirar{' '}
-        <a
-          href="https://unsplash.com/@willianjusten"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          algumas fotos
-        </a>{' '}
-        por onde vou.
+        trabalho como Software Engineer no{' '}
+        <a href="https://www.mercadolivre.com.br/">Mercado Livre</a>
       </p>
 
       <p>
         Já passei por empresas como{' '}
         <a
-          href="http://www.toptal.com/"
+          href="https://ciandt.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Toptal
+          CI&T (CIANDT)
         </a>
         ,{' '}
         <a
-          href="http://www.hugeinc.com/"
+          href="https://www.pdcase.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Huge
+          PDCase
         </a>
         ,{' '}
         <a
-          href="http://www.globo.com/"
+          href="https://www.frameworkdigital.com.br/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Globo.com
+          Framework System
         </a>
         ,{' '}
+        e outras mais. Cursei Ciência da computação no{' '}
         <a
-          href="https://queremos.com.br"
-          target="_blank"
-          rel="noopener noreferrer"
+            href="https://www.cesupa.br/"
+            target="_blank"
+            rel="noopener noreferrer"
         >
-          Queremos
-        </a>{' '}
-        e outras mais. Cursei Tecnologia da Informação na Faeterj-Petrópolis no
-        ano de 2014, mas curiosamente, essa não foi minha primeira faculdade, eu
-        também fiz <strong>Química Industrial</strong> na Uff. Sim, você leu
-        certo, eu realmente fiz Química… E por que eu trabalho com web agora?
-        Ah… porque web é incrível, a facilidade em aprender cada dia mais e
-        ainda poder ajudar um grande número de pessoas me deixa feliz e
-        realizado todos os dias.
+          CESUPA
+        </a>
+        ,{' '}
+        no ano de 2003
+      </p>
+      <p>
+        Atualmente estou fazendo uma Pós graduação em Arquitetura de Software, Ciência de Dados e Cybersecurity na{' '}
+        <a
+            href="https://posdigital.pucpr.br"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+          PUC PR
+        </a>
       </p>
 
       <p>
-        Eu amo trabalhar em equipe e sou bem comunicativo. No meu tempo livre,
-        gosto de ensinar meus amigos sobre alguma coisa que aprendi, acho que
-        por isso nasceu esse blog.
+        Sou apaixonado por tecnologia, e por isso estou sempre estudando e aprendendo novas tecnologias.
+        Atualmente estou estudando sobre Golang, Kotlin, React, React Native, NodeJS, Typescript, Docker, Kubernetes, AWS, GCP, Azure, entre outras tecnologias.
+
       </p>
 
       <h2>Contato</h2>

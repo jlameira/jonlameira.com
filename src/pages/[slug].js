@@ -1,6 +1,6 @@
-import BlogPost from 'templates/blog-post'
-import { getPostBySlug, getAllPosts } from 'lib/api'
-import markdownToHtml from 'lib/markdownToHtml'
+import BlogPost from '@/templates/blog-post'
+import { getPostBySlug, getAllPosts } from '@/lib/api'
+import markdownToHtml from '@/lib/markdownToHtml'
 
 const Post = post => {
   return <BlogPost post={post} />

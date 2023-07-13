@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo'
 import algoliasearch from 'algoliasearch/lite'
 import { withInstantSearch } from 'next-instantsearch'
 
-import Search from 'components/Search'
+import Search from '@/components/Search'
 
 const algolia = {
   appId: process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,

@@ -4,7 +4,7 @@ import * as S from './styled'
 
 const Post = ({ slug, date, timeToRead, title, description, main_class }) => {
   return (
-    <Link href={slug} passHref>
+    <Link legacyBehavior href={slug} passHref>
       <S.PostLink>
         <S.PostWrapper>
           {main_class && (

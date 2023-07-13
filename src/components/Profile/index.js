@@ -7,7 +7,7 @@ import * as S from './styled'
 const Profile = ({ title, position, authorDescription, isMobileHeader }) => {
   return (
     <S.ProfileContainer isMobileHeader={isMobileHeader}>
-      <Link href="/" passHref>
+      <Link legacyBehavior href="/" passHref>
         <S.ProfileLink>
           <Avatar />
           <S.ProfileAuthor>

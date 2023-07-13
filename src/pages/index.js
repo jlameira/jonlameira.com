@@ -1,10 +1,10 @@
 import fs from 'fs'
-import { getAllPosts } from 'lib/api'
-import { buildAlgoliaIndexes } from 'lib/buildAlgoliaIndexes'
-import { generateRss } from 'lib/generateRSS'
-import { generateSitemap } from 'lib/generateSitemap'
+import { getAllPosts } from '@/lib/api'
+import { buildAlgoliaIndexes } from '@/lib/buildAlgoliaIndexes'
+import { generateRss } from '@/lib/generateRSS'
+import { generateSitemap } from '@/lib/generateSitemap'
 
-import BlogList from 'templates/blog-list'
+import BlogList from '@/templates/blog-list'
 
 const Post = ({ posts }) => {
   return <BlogList posts={posts} />

@@ -16,7 +16,7 @@ const MenuLinks = ({ setIsMenuOpen, isMenuOpen }) => {
       <S.MenuLinksList>
         {links.map((link, i) => (
           <S.MenuLinksItem key={i} onClick={menuLinkClick}>
-            <Link href={link.url}>
+            <Link legacyBehavior href={link.url}>
               <a className={router.pathname === link.url ? 'active' : ''}>
                 {link.label}
               </a>
