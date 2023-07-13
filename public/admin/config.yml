@@ -3,7 +3,7 @@ backend:
   branch: main
   repo: jlameira/jonlameira.com
   base_url: https://jonlameira.com/
-  auth_endpoint: api/auth
+  auth_endpoint: api/auth/
 
 media_folder: public/assets/img
 public_folder: /assets/img
