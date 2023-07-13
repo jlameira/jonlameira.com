@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const withNetlifyCMS = require('@openlab/vercel-netlify-cms-github');
+
 const nextConfig = {
     webpack: (config, { dev, isServer }) => {
         // Replace React with Preact only in client production build
@@ -65,4 +67,7 @@ const nextConfig = {
     images: { domains: ['pbs.twimg.com', 'avatars.githubusercontent.com'] }
 }
 
-module.exports = nextConfig
+module.exports = withNetlifyCMS({
+  netlifyCMSConfig: './admin/config.yml',
+  ...nextConfig
+});
