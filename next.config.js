@@ -63,7 +63,7 @@ const nextConfig = {
         ]
     },
     images: { domains: ['pbs.twimg.com', 'avatars.githubusercontent.com'] },
-    trailingSlash: false,
+    trailingSlash: true,
     pageExtensions: ['js', 'jsx', 'mdx'],
     reactStrictMode: true
 }
