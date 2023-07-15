@@ -32,9 +32,7 @@ const nextConfig = {
             }
         ]
     },
-    images: { domains: ['pbs.twimg.com', 'avatars.githubusercontent.com'] },
-    reactStrictMode: true,
-    disableImportAliasWarning: true,
+    images: { domains: ['pbs.twimg.com', 'avatars.githubusercontent.com'] }
 }
 
 module.exports = nextConfig
