@@ -63,9 +63,8 @@ const nextConfig = {
         ]
     },
     images: { domains: ['pbs.twimg.com', 'avatars.githubusercontent.com'] },
-    trailingSlash: true,
-    pageExtensions: ['js', 'jsx', 'mdx'],
-    reactStrictMode: true
+    reactStrictMode: true,
+    disableImportAliasWarning: true,
 }
 
 module.exports = nextConfig
