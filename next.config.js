@@ -19,46 +19,16 @@ const nextConfig = {
             { source: '/svg/', destination: 'https://jonlameira.com/' },
             { source: '/dev/', destination: 'https://jonlameira.com/' },
             { source: '/tags/', destination: 'https://jonlameira.com/' },
-            {
-                source: '/making-of-blog-novo/',
-                destination:
-                    'https://jonlameira.com/making-of-blog-novo-gatsby-js'
-            },
+
             { source: '/page/:slug*', destination: 'https://jonlameira.com/' }
         ]
     },
     async redirects() {
         return [
             {
-                source: '/my-trips/',
-                destination: 'https://my-trips.jonlameira.com/',
-                permanent: true
-            },
-            {
-                source: '/japanese-words/',
-                destination: 'https://japanese-words.jonlameira.com/',
-                permanent: true
-            },
-            {
-                source: '/learn-japanese/',
-                destination: 'https://learn-japanese.jonlameira.com/',
-                permanent: true
-            },
-            {
-                source: '/js-com-tdd-na-pratica-na-udemy/',
-                destination: 'https://www.youtube.com/@WillianJustenCursos',
-                permanent: true
-            },
-            {
-                source: '/novo-curso-aprenda-criar-sites-animados-greensock/',
-                destination: 'https://jonlameira.com',
-                permanent: true
-            },
-            {
-                source:
-                    '/novo-curso-gatsby-crie-um-site-pwa-com-react-graphql-netlify-cms/',
-                destination: 'https://jonlameira.com',
-                permanent: true
+                source: '/admin',
+                destination: '/admin/index.html',
+                permanent: true,
             }
         ]
     },

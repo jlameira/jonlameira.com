@@ -30,10 +30,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-BR">
-        <Head>
-          {/* Netlify Widget */}
-          <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
-        </Head>
+        <Head />
         <body className="dark">
           <Main />
           <NextScript />
@@ -64,18 +61,6 @@ export default class MyDocument extends Document {
             `
             }}
           />
-          <script dangerouslySetInnerHTML={{
-            __html: `
-              if (window.netlifyIdentity) {
-                window.netlifyIdentity.on("init", user => {
-                  if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                      document.location.href = "/admin/";
-                    });
-                  }
-                });
-              }
-          `}}/>
         </body>
       </Html>
     )
