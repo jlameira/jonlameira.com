@@ -49,3 +49,7 @@ Nessa camada, implementamos a integração com a API dos Correios e a chamada do
 
 ## *Conclusão:*
 Ao aplicar os princípios do Domain-Driven Design (DDD) e o padrão de projeto Value Objects em Golang, podemos desenvolver sistemas mais robustos e de fácil manutenção. O exemplo prático do cálculo de frete utilizando a API dos Correios demonstra como esses padrões podem ser implementados em uma arquitetura com várias camadas, proporcionando uma melhor separação de responsabilidades e maior clareza na modelagem do domínio. Ao adotar essas práticas em seus projetos em Golang, você estará construindo sistemas mais confiáveis e escaláveis, proporcionando uma melhor experiência para os usuários de suas aplicações. O DDD e os Value Objects são ferramentas poderosas para tornar o desenvolvimento mais inteligente e eficaz, trazendo benefícios tangíveis para a experiência do usuário e para o seu negócio como um todo.
+
+#### Github:
+Exemplo completo disponível no Github:
+[golang-tips](https://github.com/jlameira/golang-tips.git)
