@@ -42,7 +42,9 @@ type Frete struct {
 }
 
 // NewFrete é um construtor para criar um novo Frete
-func NewFrete(cepOrigem, cepDestino string, pesoEmGramas int, valorEmReais float64, prazoEntrega int) *Frete {
+func NewFrete(cepOrigem string, 
+cepDestino string, pesoEmGramas int,
+valorEmReais float64, prazoEntrega int) *Frete {
 	return &Frete{
 		CEPOrigem:      cepOrigem,
 		CEPDestino:     cepDestino,
@@ -68,7 +70,10 @@ type FreteService struct{
 }
 
 // CalcularFrete recebe as informações do produto e do endereço de entrega e calcula o frete
-func (svc *FreteService) CalcularFrete(cepOrigem, cepDestino string, pesoEmGramas int, valorEmReais float64, isIndustrial bool) *domain.Frete {
+func (svc *FreteService) CalcularFrete(cepOrigem string, 
+cepDestino string, pesoEmGramas int,
+valorEmReais float64, isIndustrial bool)
+*domain.Frete {
 	// Aqui, chamamos a API dos Correios para obter o prazo de entrega
 	prazoEntrega, err := svc.correiosAPI.ObterPrazoEntrega(cepOrigem, cepDestino, isIndustrial)
 	if err != nil {
@@ -99,12 +104,16 @@ type CorreiosAPI interface {
 type CorreiosAPIImpl struct{}
 
 // ObterPrazoEntrega recebe os ceps de origem e destino e o tipo de entrega (industrial ou varejo) e retorna o prazo de entrega
-func (api *CorreiosAPIImpl) ObterPrazoEntrega(cepOrigem, cepDestino string, isIndustrial bool) (int, error) {
+func (api *CorreiosAPIImpl) ObterPrazoEntrega(cepOrigem string,
+cepDestino string,isIndustrial bool
+) (int, error) {
 	// Aqui, fazemos a chamada à API dos Correios para obter o prazo de entrega
-	// Implementação fictícia que retorna um prazo de entrega padrão de 3 dias úteis para o tipo "Correios Industrial"
+	// Implementação fictícia que retorna um
+ // prazo de entrega padrão de 3 dias úteis para o tipo "Correios Industrial"
 	// e 5 dias úteis para o tipo "Correios Varejo"
 
-	// A chamada à API dos Correios deve ser realizada aqui, substituindo as implementações fictícias abaixo.
+	// A chamada à API dos Correios deve ser realizada aqui, 
+// substituindo as implementações fictícias abaixo.
 	if isIndustrial {
 		prazoEntrega, err := api.CalculaPrazoEPreco(cepOrigem, cepDestino, "industrial")
 		if err != nil {
@@ -121,8 +130,12 @@ func (api *CorreiosAPIImpl) ObterPrazoEntrega(cepOrigem, cepDestino string, isIn
 }
 
 // CalculaPrazoEPreco é a função de chamada à API externa dos Correios
-func (api *CorreiosAPIImpl) CalculaPrazoEPreco(cepOrigem, cepDestino, user string) (int, error) {
-	// Implementação fictícia que retorna um prazo de entrega padrão de 3 dias úteis para o tipo "Correios Industrial"
+func (api *CorreiosAPIImpl) CalculaPrazoEPreco(cepOrigem string, 
+cepDestino, user string
+) (int, error) {
+	// Implementação fictícia que 
+// retorna um prazo de entrega padrão de 
+// 3 dias úteis para o tipo "Correios Industrial"
 	// e 5 dias úteis para o tipo "Correios Varejo"
 	switch user {
 	case "industrial":
