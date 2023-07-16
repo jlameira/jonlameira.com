@@ -96,7 +96,10 @@ import (
 
 // CorreiosAPI é a interface para integração com a API dos Correios
 type CorreiosAPI interface {
-	// ObterPrazoEntrega recebe os ceps de origem e destino e o tipo de entrega (industrial ou varejo) e retorna o prazo de entrega
+	// ObterPrazoEntrega recebe os ceps 
+ // de origem e destino e o tipo de entrega 
+// (industrial ou varejo) 
+// e retorna o prazo de entrega
 	ObterPrazoEntrega(cepOrigem, cepDestino string, isIndustrial bool) (int, error)
 }
 
