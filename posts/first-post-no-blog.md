@@ -103,7 +103,10 @@ type CorreiosAPI interface {
 // CorreiosAPIImpl é a implementação da integração com a API dos Correios
 type CorreiosAPIImpl struct{}
 
-// ObterPrazoEntrega recebe os ceps de origem e destino e o tipo de entrega (industrial ou varejo) e retorna o prazo de entrega
+// ObterPrazoEntrega recebe os 
+// ceps de origem e destino 
+// e o tipo de entrega (industrial ou varejo) 
+// e retorna o prazo de entrega
 func (api *CorreiosAPIImpl) ObterPrazoEntrega(cepOrigem string,
 cepDestino string,isIndustrial bool
 ) (int, error) {
