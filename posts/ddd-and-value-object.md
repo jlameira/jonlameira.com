@@ -22,14 +22,17 @@ tags:
 #### _O que é Domain-Driven Design (DDD)?_
 
 _Domain-Driven Design_ é uma metodologia que tem como objetivo alinhar o desenvolvimento de software com o domínio do negócio. Com DDD, podemos dividir nossa aplicação em diferentes camadas e focar na modelagem do domínio do problema. Em nosso exemplo, consideraremos as camadas Domínio, Aplicação e Infraestrutura.
+
 _Value Objects no contexto de DDD_:
+
 _Value Objects_ são objetos imutáveis que representam um valor único. Eles são identificados por suas propriedades e não possuem uma identidade própria. Ao utilizar Value Objects, podemos garantir a integridade dos dados e evitar problemas relacionados a objetos mutáveis.
+
 _Cálculo de Frete na API dos Correios_:
+
 Vamos imaginar que estamos desenvolvendo um serviço de cálculo de frete para um sistema de comércio eletrônico, onde receberemos uma requisição contendo as informações do produto e do endereço de entrega. Vamos aplicar os conceitos de DDD e Value Objects para modelar o cálculo de frete utilizando a API dos Correios.Em nossa arquitetura, teremos as seguintes camadas:
 
 ### **Camada de Domínio:**
 Nessa camada, criaremos nosso Value Object "Frete", que representará o cálculo de frete.
-package domain
 
 ![struct-frete](./assets/img/ddd-value-object/struct-frete.png "Struct Frete")
 
