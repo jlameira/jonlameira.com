@@ -16,6 +16,7 @@
     "@styled-icons/boxicons-solid": "10.47.0",
     "@styled-icons/entypo": "10.46.0",
     "@styled-icons/fa-solid": "10.47.0",
+    "@vercel/analytics": "1.0.1",
     "algoliasearch": "4.18.0",
     "babel-plugin-prismjs": "2.1.0",
     "babel-plugin-styled-components": "2.1.4",

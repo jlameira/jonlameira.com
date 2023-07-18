@@ -6,7 +6,7 @@ import NextNProgress from 'nextjs-progressbar'
 import * as gtag from '@/lib/gtag'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
-import Analytics from '@/components/Analytics'
+import { Analytics } from '@vercel/analytics/react';
 
 import Layout from '@/components/Layout'
 import GlobalStyles from '@/styles/global'
