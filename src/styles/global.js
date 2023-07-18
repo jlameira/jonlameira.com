@@ -65,24 +65,26 @@ const GlobalStyles = createGlobalStyle`
 
   body.dark {
     --borders: #38444d;
-    --texts: #8899a6;
+    --texts: #cfd8dc;
     --postColor: #fff;
-    --highlight: #F231A5;
-    --mediumBackground: #0a0c21;
-    --background: #030518;
+    --highlight: #3498db;
+    --mediumBackground: #192734;
+    --background: #121b21;
     --white: #fff;
-    --black: #222;
+    --black: #cfd8dc;
   }
 
+
   body.light {
-    --borders: #dedede;
-    --postColor: #111;
-    --texts: #555555;
-    --highlight: #F231A5;
-    --mediumBackground: #f0f0f3;
+    --borders: #38444d;
+    --texts: #444;
+    --postColor: #000;
+    --highlight: #3498db;
+    --mediumBackground: #eef2f5;
     --background: #fff;
     --white: #fff;
-    --black: #222;
+    --black: #444;
   }
+
 `
 export default GlobalStyles
