@@ -1,10 +1,11 @@
+local_backend: true
+
 backend:
-  name: github
+  name: git-gateway
   branch: main
   repo: jlameira/jonlameira.com
   base_url: https://jonlameira.com/
   auth_endpoint: api/auth/
-  local_backend: true
 
 media_folder: public/assets/img
 public_folder: /assets/img
