@@ -7,6 +7,11 @@ const links = [
     label: 'Sobre Mim',
     url: '/about'
   },
+
+  {
+    label: 'Videos Cursos Educaçao',
+    url: '/cursos'
+  },
   // {
   //   label: 'Cursos',
   //   url: '/cursos'
