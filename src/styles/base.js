@@ -140,6 +140,7 @@ export const MainContent = styled.section`
     white-space: normal;
     overflow-wrap: break-word;
     font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+    line-height: 1.6;
   }
 
   pre > code {
