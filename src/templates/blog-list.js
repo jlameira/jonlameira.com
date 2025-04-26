@@ -42,7 +42,7 @@ const BlogList = ({ posts }) => {
         openGraph={{
           images: [
             {
-              url: 'https://willianjusten.com.br/assets/img/blog-cover.png',
+              url: 'https://jonlameira/assets/img/blog-cover.png',
               width: 1200,
               height: 630,
               alt: 'Jonathan Lameira Blog'
